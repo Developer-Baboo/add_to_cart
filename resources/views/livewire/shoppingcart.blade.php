@@ -29,8 +29,8 @@
                             <td>
                                 <p class="mb-2 md:ml-4">{{ $item->product->name}}</p>
                                 {{--  --}}
-                                <button type="submit" class="md:ml-4 text-red-700">
-                                    {{-- wire:click="removeItem({{ $item->id }})" --}}
+                                <button type="submit" class="md:ml-4 text-red-700" wire:click="removeItem({{ $item->id }})">
+
                                     <small>(Remove item)</small>
                                 </button>
                             </td>
@@ -54,14 +54,13 @@
                             </td>
                             <td class="hidden text-right md:table-cell">
                                 <span class="text-sm lg:text-base font-medium">
-                                    {{ $item->product->price }}
+                                    {{ $item->product->price }}$
 
                                 </span>
                             </td>
                             <td class="text-right">
                                 <span class="text-sm lg:text-base font-medium">
-                                    {{ $item->product->price * $item->quantity }}
-                                    199
+                                    {{ $item->product->price * $item->quantity }}$
                                 </span>
                             </td>
                         </tr>
@@ -82,7 +81,7 @@
                                 </div>
                                 <div class="lg:px-4 lg:py-2 m-2 lg:text-lg font-bold text-center text-gray-900">
                                     {{-- {{ $sub_total }} --}}
-                                    100
+                                    100$
 
                                 </div>
                             </div>
@@ -92,7 +91,7 @@
                                 </div>
                                 <div class="lg:px-4 lg:py-2 m-2 lg:text-lg font-bold text-center text-gray-900">
                                     {{-- {{ $tax }} --}}
-                                    199
+                                    199$
                                 </div>
                             </div>
                             <div class="flex justify-between pt-4 border-b">
@@ -101,7 +100,7 @@
                                 </div>
                                 <div class="lg:px-4 lg:py-2 m-2 lg:text-lg font-bold text-center text-gray-900">
                                     {{-- {{ $this->total }}$ --}}
-                                    199
+                                    199$
                                 </div>
                             </div>
 
