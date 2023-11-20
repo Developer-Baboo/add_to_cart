@@ -4,7 +4,7 @@ namespace App\Livewire;
 
 use App\Models\Product;
 use Livewire\Component;
-use App\Models\Shippingcart;
+use App\Models\Shoppingcart;
 
 class Productlist extends Component
 {
@@ -26,7 +26,7 @@ class Productlist extends Component
                 'user_id' => auth()->user()->id,
                 'product_id' => $id,
             ];
-            Shippingcart::updateOrCreate($data);
+            Shoppingcart::updateOrCreate($data);
             session()->flash('success', 'Product added to cart successfully');
         }else{
             return redirect(route('login'));

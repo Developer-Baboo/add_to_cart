@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('shippingcarts', function (Blueprint $table) {
+        Schema::create('shoppingcarts', function (Blueprint $table) {
             $table->id();
             $table->integer('quantity')->default(1);
             $table->foreignId('product_id')
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('shippingcarts');
+        Schema::dropIfExists('shoppingcarts');
     }
 };

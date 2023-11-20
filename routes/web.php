@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use App\Livewire\ShoppingCart;
 use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +33,5 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/shoppingcart', \App\Livewire\ShoppingCart::class)->name('shoppingcart');
