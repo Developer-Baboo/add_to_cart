@@ -34,4 +34,6 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/shoppingcart', \App\Livewire\ShoppingCart::class)->name('shoppingcart');
+// routes/web.php
+Route::get('/shoppingcart', \App\Livewire\ShoppingCart::class)
+    ->name('shoppingcart'); // Set the layout here as well

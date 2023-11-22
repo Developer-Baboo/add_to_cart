@@ -80,8 +80,8 @@
                                     Subtotal
                                 </div>
                                 <div class="lg:px-4 lg:py-2 m-2 lg:text-lg font-bold text-center text-gray-900">
-                                    {{-- {{ $sub_total }} --}}
-                                    100$
+                                    {{ $sub_total }}
+                                    {{-- 100$ --}}
 
                                 </div>
                             </div>
@@ -90,8 +90,8 @@
                                     Tax
                                 </div>
                                 <div class="lg:px-4 lg:py-2 m-2 lg:text-lg font-bold text-center text-gray-900">
-                                    {{-- {{ $tax }} --}}
-                                    199$
+                                    {{ $tax }}
+                                    {{-- 199$ --}}
                                 </div>
                             </div>
                             <div class="flex justify-between pt-4 border-b">
@@ -99,8 +99,8 @@
                                     Total
                                 </div>
                                 <div class="lg:px-4 lg:py-2 m-2 lg:text-lg font-bold text-center text-gray-900">
-                                    {{-- {{ $this->total }}$ --}}
-                                    199$
+                                    {{ $this->total }}$
+                                    {{-- 199$ --}}
                                 </div>
                             </div>
 
@@ -121,4 +121,5 @@
             </div>
         </div>
     </div>
+     @livewireScripts
 </div>
