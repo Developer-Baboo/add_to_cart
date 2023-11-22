@@ -15,8 +15,7 @@ class Productlist extends Component
     }
 
 
-    public function addToCart($id){
-        // dd($id);
+    public function addToCart($id){       // dd($id);
 
 
         if(auth()->user()){
